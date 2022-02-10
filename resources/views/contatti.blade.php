@@ -10,7 +10,7 @@
     <div>
         <ul>
             @foreach ($names as $name)
-                {{$name}}
+               <li>{{$name}}</li> 
             @endforeach
         </ul>
     </div>
