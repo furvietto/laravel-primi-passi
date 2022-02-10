@@ -7,8 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
-        Ciao {{ $name }} {{ $surname }}
-    </div>
+    <ul>
+        @foreach ($links as $link)
+            <li>
+                <a href="/{{$link}}">{{$link}}</a>
+            </li>
+        @endforeach
+    </ul>
 </body>
 </html>
