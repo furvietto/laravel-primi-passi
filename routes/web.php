@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $data = [
         "links" => [
-            "home" => "home",
+            "pagina" => "pagina",
             "contatti" => "contatti",
             "info" => "info",
         ],
@@ -29,4 +29,12 @@ Route::get('/contatti', function () {
         "names" => ["ciao","a","tutti","quanti"]
     ];
     return view('contatti',$contact);
-});
+})->name('contact');
+
+Route::get('/info', function () {
+    return view('info',);
+})->name('infos');
+
+Route::get('/pagina', function () {
+    return view('pagina',);
+})->name('pagine');

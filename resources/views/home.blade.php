@@ -14,5 +14,17 @@
             </li>
         @endforeach
     </ul>
+    <ul>
+        <li>
+            <a href="{{route('contact')}}">contatti</a>
+        </li>
+        <li>
+            <a href="{{route('infos')}}">info</a>
+        </li>
+        <li>
+            <a href="{{route('pagine')}}">pagine</a>
+        </li>
+        
+    </ul>
 </body>
 </html>
